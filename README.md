@@ -27,13 +27,29 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    .forEach is like a simplified 'for' loop, with all the functionality of (let i = 0; i < item.length/number; i++) pre-written under the hood. Thus, it carries very similar functionality and flexibility. .map, on the other hand, carries the same functionality under the hood, but returns the result of whatever functionality you hand it in the form of an array, ie. every item it iterates over and enacts said functionality on gets pushed to and returned in said array.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function or method which takes in and uses a callback function - callback functions being what we would call any function when passed to another function as an argument.
 
 3. What is closure?
 
+Closure describes the idea of scope, and that functions can only look outward for context and never inward. It is also a concept which can be used to extend the lifetime of and make private a variable which you might want only manipulated by the function it resides within.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Window Binding: When not inside something, 'this' refers to the window it sits inside.
+
+    2. Implicit Binding: When inside a method of an object, 'this' refers to the object which owns the method.
+
+    3. New Binding: When creating a new named object from a constructor function, 'this' refers specifically to that newly created object post-creation.
+
+    4. Explicit Binding: When using '.call' or '.apply', 'this' refers to the object you applied the new functions to.
+
 5. Why do we need super() in an extended class?
+
+super() is used to pass any arguments/values given to the subclass constructor when instantiating a new object up to the original class constructor in order for the values inherited from said original constructor to be filled in with said values.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
