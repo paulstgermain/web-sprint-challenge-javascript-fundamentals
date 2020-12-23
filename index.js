@@ -69,6 +69,8 @@ const zooAnimals = [
   }
 
   console.log(animalNames(zooAnimals));
+
+  // .forEach operates the same as a for loop - it takes a call back function which allows you to do or return more-or-less whatever you want from within the array it is asked to iterate through.
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -81,6 +83,9 @@ const zooAnimals = [
     return arr.map(item => item.animal_name.toLowerCase());
   }
   console.log(lowerCaseNames(zooAnimals));
+
+  // .map Iterates through the given array and takes a callback function to perform operations on or return specific elements of every item inside the array and return them to a new array - all without changing the original array.
+
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
@@ -90,6 +95,9 @@ const zooAnimals = [
   function lowPopulationAnimals(arr){
     return arr.filter(item => item.population < 5);
   }
+
+
+  // .filter iterates through the given array and takes a callback function to specifically check whether a statement returns true per item in the array - if the item passes the check, it's passed into a brand new array - again, without affecting the original array.
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
@@ -103,6 +111,9 @@ const zooAnimals = [
       return result + item.population
     },0);
   }
+
+
+  // .reduce iterates through a given array and takes a callback function specifically designed to perform specified calculations to either reduce all numbers to a singular number or concatenate all passed strings together. This result is also added to a brand new array without changing the original. It takes two arguments minimum: one is an accumulator to hold the result of each calculation resulting in the final result (Which can be told at what number to begin) and the other is the typical iterator which becomes the data in the array index being looked at.
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
